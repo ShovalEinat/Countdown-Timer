@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="countdownTimer.css">
+    <link rel="icon" type="image.png" href="siteLogo.png">
+</head>
+<body>
+
+<div id="countdown-timer">
+    <h2><u>Countdown Timer</u></h2>
+    <label id="choose" for="countdown-date">Choose a date and time:</label>
+    <div class="input-wrapper">
+          <input type="datetime-local" id="countdown-date" value="" />
+          <i class="fa fa-calendar"></i>
+    </div>
+    <br><br>
+    <button id="startCountdown" onclick="startCountdown(), showSpans()">Start Countdown</button>
+    <div id="countdown">
+        <div id="countdown-labels"></div>
+        <div id="Years">Years : 0</div>
+        <div id="Months">Months : 0</div>
+        <div id="Weeks">Weeks : 0</div>
+        <div id="Days">Days : 0</div>
+        <div id="Hours">Hours : 0</div>
+        <div id="Minutes">Minutes : 0</div>
+        <div id="Seconds">Seconds : 0</div>
+    </div>
+</div>
+
+<script src="countdownTimer.js"></script>
+</body>
+</html>

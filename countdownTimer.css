@@ -1,0 +1,66 @@
+body{
+   text-align: center; 
+   background-color: rgb(3, 0, 17);
+   color: white;
+   font-size: 50px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.input-wrapper {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+}
+  
+.input-wrapper input {
+    width: 100%;
+    padding: 10px 30px 10px 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-bottom-width: 3px;
+    background: transparent;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+  
+.input-wrapper .fa-calendar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #ccc;
+}
+  
+.input-wrapper input:focus {
+    outline: none;
+    border-color: #66afe9;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+::-webkit-calendar-picker-popup {
+    background-color: white;
+}
+
+#startCountdown{
+    font-size: 50px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    color: #030000;
+    cursor: pointer;
+}
+
+#startCountdown:hover{
+    background-color: rgb(167, 167, 167);
+}
+
+#Years, #Months, #Weeks, #Days, #Hours, #Minutes, #Seconds{
+    display: none;
+}
